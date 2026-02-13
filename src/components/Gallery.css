@@ -1,0 +1,53 @@
+.gallery-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-container h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #d500f9;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px rgba(213, 0, 249, 0.4);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Smaller min-width for mobile 2-col */
+    gap: 15px;
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        padding: 20px 10px;
+    }
+
+    .gallery-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .gallery-grid {
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        /* Force 2 columns on mobile */
+    }
+}
+
+.gallery-item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    aspect-ratio: 1;
+    /* Make them square tiles for neatness, or we can use masonry later */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
