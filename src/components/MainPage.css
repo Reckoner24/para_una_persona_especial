@@ -130,37 +130,47 @@
 
 /* Minimalist Links as Buttons with rose-gold accent */
 .yes-btn {
-    padding: 10px 0;
-    font-size: 1.1rem;
-    background: transparent;
+    padding: 14px 40px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 160, 160, 0.3);
+    border-radius: 30px;
     color: var(--text-white);
-    border: none;
-    border-bottom: 1px solid var(--accent-rose);
-    border-radius: 0;
     cursor: pointer;
     font-family: var(--font-sans);
     text-transform: uppercase;
     letter-spacing: 3px;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
 
 .yes-btn:hover {
-    background: transparent;
-    border-bottom-color: var(--text-white);
+    background: rgba(212, 160, 160, 0.15);
+    border-color: var(--accent-rose);
     color: var(--accent-rose);
-    padding-bottom: 5px;
-    box-shadow: none;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .no-btn {
-    padding: 10px 0;
-    font-size: 1.1rem;
-    background: transparent;
+    padding: 14px 40px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
     color: rgba(255, 255, 255, 0.4);
-    border: none;
     cursor: pointer;
     font-family: var(--font-sans);
-    border-bottom: 1px solid transparent;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.no-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Success Message */

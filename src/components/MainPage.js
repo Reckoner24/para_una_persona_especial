@@ -84,7 +84,7 @@ const MainPage = () => {
                     {!accepted ? (
                         <>
                             <h2>Una pregunta importante</h2>
-                            <p>Después de todo lo vivido...</p>
+                            <p>Después de todo lo vivido y esperando que no sea tarde...</p>
                             <h3>¿Quieres ser mi San Valentín?</h3>
                             <div className="proposal-buttons">
                                 <button className="yes-btn" onClick={handleAccept}>Sí, acepto</button>

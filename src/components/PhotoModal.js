@@ -35,21 +35,7 @@ const PhotoModal = ({ photo, onClose, onPrev, onNext }) => {
 
                 <button className="photo-modal-close" onClick={onClose}>✕</button>
 
-                {/* Prev button */}
-                <button
-                    className="photo-modal-nav photo-modal-prev"
-                    onClick={(e) => { e.stopPropagation(); onPrev(); }}
-                >
-                    ‹
-                </button>
 
-                {/* Next button */}
-                <button
-                    className="photo-modal-nav photo-modal-next"
-                    onClick={(e) => { e.stopPropagation(); onNext(); }}
-                >
-                    ›
-                </button>
 
                 <motion.div
                     className="photo-modal"
@@ -59,6 +45,18 @@ const PhotoModal = ({ photo, onClose, onPrev, onNext }) => {
                     exit={{ opacity: 0, scale: 0.95 }}
                     transition={{ duration: 0.25 }}
                     onClick={(e) => e.stopPropagation()}
+                    drag="x"
+                    dragConstraints={{ left: 0, right: 0 }}
+                    dragElastic={1}
+                    onDragEnd={(e, { offset, velocity }) => {
+                        const swipe = offset.x;
+
+                        if (swipe < -50 || velocity.x < -500) {
+                            onNext();
+                        } else if (swipe > 50 || velocity.x > 500) {
+                            onPrev();
+                        }
+                    }}
                 >
                     <div className="photo-modal-image">
                         <img
