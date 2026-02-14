@@ -1,0 +1,39 @@
+Optimizing 29 images...
+Max width: 1200px | JPEG quality: 75
+===========================================================================
+  20250606_213619.jpg  |  1030 KB -> 76 KB  (92.6% saved)
+  20250615_215435.jpg  |  898 KB -> 46 KB  (94.9% saved)
+  20250629_213040.jpg  |  1184 KB -> 79 KB  (93.3% saved)
+  20250712_201210.jpg  |  1384 KB -> 109 KB  (92.1% saved)
+  20251101_171635.jpg  |  1694 KB -> 193 KB  (88.6% saved)
+  20251101_171640.jpg  |  1703 KB -> 196 KB  (88.5% saved)
+  20251230_211339(0).jpg  |  1604 KB -> 126 KB  (92.2% saved)
+  20260101_001625.jpg  |  9017 KB -> 68 KB  (99.2% saved)
+  20260101_001630.jpg  |  8210 KB -> 74 KB  (99.1% saved)
+  20260210_161926-COLLAGE.jpg  |  1645 KB -> 205 KB  (87.5% saved)
+  AGC_20250803_143912928.jpg  |  2393 KB -> 196 KB  (91.8% saved)
+  IMG-20250126-WA0007.jpg  |  1248 KB -> 233 KB  (81.4% saved)
+  IMG-20250227-WA0067.jpg  |  206 KB -> 83 KB  (59.7% saved)
+  IMG-20250227-WA0069.jpg  |  1500 KB -> 129 KB  (91.4% saved)
+  IMG-20250227-WA0072.jpg  |  437 KB -> 324 KB  (25.8% saved)
+  IMG-20250330-WA0053.jpg  |  315 KB -> 132 KB  (58.2% saved)
+  IMG-20250412-WA0035.jpg  |  1099 KB -> 282 KB  (74.3% saved)
+  IMG_0044.jpg  |  1569 KB -> 170 KB  (89.2% saved)
+  IMG_0394~2.jpg  |  2507 KB -> 229 KB  (90.9% saved)
+  IMG_2766-COLLAGE.jpg  |  706 KB -> 179 KB  (74.7% saved)
+  IMG_9958.jpg  |  1590 KB -> 89 KB  (94.4% saved)
+  IMG_9973.jpg  |  1076 KB -> 145 KB  (86.5% saved)
+  PXL_20250125_212606639.MV.jpg  |  4115 KB -> 91 KB  (97.8% saved)
+  PXL_20250125_221625131.jpg  |  933 KB -> 224 KB  (75.9% saved)
+  PXL_20250208_170458766.jpg  |  1577 KB -> 139 KB  (91.2% saved)
+  PXL_20250220_224740290.jpg  |  1025 KB -> 80 KB  (92.2% saved)
+  PXL_20250220_224805277.jpg  |  1360 KB -> 144 KB  (89.4% saved)
+  PXL_20250224_143305138.jpg  |  3838 KB -> 209 KB  (94.6% saved)
+  Screenshot_20250609_092434_Instagram.jpg  |  238 KB -> 153 KB  (35.7% saved)
+===========================================================================
+TOTAL BEFORE: 54.8 MB
+TOTAL AFTER:  4.3 MB
+SAVED:        92.2%
+
+Originals backed up in: public/gallery/originals/
+To restore: copy files back from the originals folder.

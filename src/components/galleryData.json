@@ -1,31 +1,152 @@
 [
-  "20250606_213619.jpg",
-  "20250615_215435.jpg",
-  "20250629_213040.jpg",
-  "20250712_201210.jpg",
-  "20251101_171635.jpg",
-  "20251101_171640.jpg",
-  "20251230_211339(0).jpg",
-  "20260101_001625.jpg",
-  "20260101_001630.jpg",
-  "20260210_161926-COLLAGE.jpg",
-  "AGC_20250803_143912928.jpg",
-  "IMG-20250126-WA0007.jpg",
-  "IMG-20250227-WA0067.jpg",
-  "IMG-20250227-WA0069.jpg",
-  "IMG-20250227-WA0072.jpg",
-  "IMG-20250330-WA0053.jpg",
-  "IMG-20250412-WA0035.jpg",
-  "IMG_0044.jpg",
-  "IMG_0394~2.jpg",
-  "IMG_2766-COLLAGE.jpg",
-  "IMG_9958.jpg",
-  "IMG_9973.jpg",
-  "PXL_20250125_212606639.MV.jpg",
-  "PXL_20250125_221625131.jpg",
-  "PXL_20250208_170458766.jpg",
-  "PXL_20250220_224740290.jpg",
-  "PXL_20250220_224805277.jpg",
-  "PXL_20250224_143305138.jpg",
-  "Screenshot_20250609_092434_Instagram.jpg"
+  {
+    "filename": "20251101_171635.jpg",
+    "title": "Un viaje memorable",
+    "location": "Cuetzalan, Puebla",
+    "description": "Primer viaje juntos saliendo solos a un pueblito mágico, conocer lugares nuevos a tu lado siempre será mágico"
+  },
+  {
+    "filename": "20250712_201210.jpg",
+    "title": "Cafetería Friki",
+    "location": "Polanco, CDMX",
+    "description": "Una chica hermosa escuchó y le acompañó a un lugar que dónde él sabía que solo podía ir con ella"
+  },
+  {
+    "filename": "20250629_213040.jpg",
+    "title": "Fragilidad Humana",
+    "location": "Oasis, CDMX",
+    "description": "Acompañando a un lisiado sentado porque su pierna le dolía mucho, amor puro"
+  },
+  {
+    "filename": "20250615_215435.jpg",
+    "title": "Sesión Íntima",
+    "location": "Hogar, CDMX",
+    "description": "Una sesión de skin care siempre será íntima, gracias por preocuparte por mi piel y compartir momentos como este conmigo"
+  },
+  {
+    "filename": "20250606_213619.jpg",
+    "title": "Regalos bonitos para una persona bonita",
+    "location": "Hogar, CDMX",
+    "description": "Escuchandote intenté buscar regalos que te pudieran gustar y que tuvieras con cariño, ya deseo que sea tu próximo cumpleaños para darte más"
+  },
+  {
+    "filename": "Screenshot_20250609_092434_Instagram.jpg",
+    "title": "Una cita en el cine",
+    "location": "Cinepolis Perisur, CDMX",
+    "description": "Ver cualquier película contigo siempre será de mis citas favoritas, me encanta poder pasar esos momentos juntos"
+  },
+  {
+    "filename": "PXL_20250224_143305138.jpg",
+    "title": "El mejor cumpleaños",
+    "location": "Bakon Sushi, Culiacán",
+    "description": "Me encanta poder comer contigo, está fue la última vez hasta el momento que comemos un sushi tan monchoso como ese, gracias"
+  },
+  {
+    "filename": "PXL_20250220_224805277.jpg",
+    "title": "Unos ojos hermosos",
+    "location": "Reforma, CDMX",
+    "description": "La mirada más hermosa que he podido tomar con mi cámara, algo que atesorare hasta que te tome una mejor foto"
+  },
+  {
+    "filename": "PXL_20250220_224740290.jpg",
+    "title": "Unos ojos hermosos 2",
+    "location": "Reforma, CDMX",
+    "description": "Te ves tan hermosa..."
+  },
+  {
+    "filename": "PXL_20250208_170458766.jpg",
+    "title": "Obra de arte en su lugar",
+    "location": "MUNAL, CDMX",
+    "description": "Todos los cuadros y pinturas que miramos se quedan cortos con tu belleza natural"
+  },
+  {
+    "filename": "PXL_20250125_221625131.jpg",
+    "title": "Una visita esperada",
+    "location": "Aeropuerto, CDMX",
+    "description": "Gracias por darte la oportunidad de estar conmigo y poderme visitar aún cuando teniamos vacío el departamento"
+  },
+  {
+    "filename": "PXL_20250125_212606639.MV.jpg",
+    "title": "Un loco que dejó de estar solo",
+    "location": "Aeropuerto CDMX",
+    "description": "Contigo en otra ciudad, contigo en cualquier otro lado, contigo en mi corazón... Jamás podría sentirme solo"
+  },
+  {
+    "filename": "IMG-20250412-WA0035.jpg",
+    "title": "Una graduada hermosa",
+    "location": "Tres Ríos, Culiacán",
+    "description": "Recién graduada, empezando una nueva etapa en su vida, orgullo andante rodeada de personas que la aman"
+  },
+  {
+    "filename": "IMG-20250227-WA0072.jpg",
+    "title": "Sesión de fotos",
+    "location": "Jardin botánico, Culiacán",
+    "description": "Una personita especial tomándose fotos especiales para celebrar el cumplimiento de un gran paso en su vida"
+  },
+  {
+    "filename": "IMG-20250227-WA0067.jpg",
+    "title": "Entre peces",
+    "location": "Acuario Michin, CDMX",
+    "description": "Recién comimos un Icee, cuántas fotos tan hermosas tomamos, esta es una de ellas"
+  },
+  {
+    "filename": "IMG-20250126-WA0007.jpg",
+    "title": "Entre tiburones",
+    "location": "Acuario Michin, CDMX",
+    "description": "Mi foto favorita de toda la vida, no tengo palabras para describirla"
+  },
+  {
+    "filename": "IMG_9973.jpg",
+    "title": "Soumaya",
+    "location": "Soumaya, CDMX",
+    "description": "Siempre destacarás entre tantas obras de arte"
+  },
+  {
+    "filename": "IMG_9958.jpg",
+    "title": "Haciendo fila",
+    "location": "Soumaya, CDMX",
+    "description": "Cualquier acto tan simple siempre será especial a tu lado"
+  },
+  {
+    "filename": "IMG_2766-COLLAGE.jpg",
+    "title": "Un cambio",
+    "location": "Culiacán - CDMX",
+    "description": "Antes nos organizabamos para vernos cada semana, también hacía lo posible para verte después de trabajar, ahora viviendo juntos me llena el corazón poder llegar juntos a nuestro hogar y simplemente \"estar\""
+  },
+  {
+    "filename": "IMG_0394~2.jpg",
+    "title": "Historia",
+    "location": "Teotihuacán, EDO MEX",
+    "description": "Un gran día con una gran persona, la cultura siempre será algo de lo que disfrutamos juntos"
+  },
+  {
+    "filename": "IMG_0044.jpg",
+    "title": "No saber posar",
+    "location": "Museo Postal, CDMX",
+    "description": "Me encontré esta foto por ahí, me gustó y quise ponerla, me recuerda a cuándo nos metimos pensando que era parte del MUNAL"
+  },
+  {
+    "filename": "AGC_20250803_143912928.jpg",
+    "title": "Colores",
+    "location": "Museo del perfume, CDMX",
+    "description": "No puedo oler muy bien, pero se que siempre podría identificarte solo por tu olor en un mundo de gente"
+  },
+  {
+    "filename": "20260210_161926-COLLAGE.jpg",
+    "title": "Concierto esperado",
+    "location": "Pepsi WTC, CDMX",
+    "description": "Gracias por este momento, me encantó conocer en vivo una de nuestras bandas favoritas y escuchar en vivo lo que yo considero nuestra canción."
+  },
+  {
+    "filename": "20260101_001630.jpg",
+    "title": "Un nuevo año",
+    "location": "Reforma, CDMX",
+    "description": "Nuestro primer año nuevo juntos, con familia, sintiéndome parte de ella. Nos quedamos esperando los fuegos artificiales, pero no había nada que deslumbrara tanto como tú sonrisa"
+  },
+  {
+    "filename": "20251230_211339(0).jpg",
+    "title": "Parque de diversiones",
+    "location": "Six flags, CDMX",
+    "description": "Hacia mucho frío ese día, es una foto que me gustó muchísimo y siento que fue la única que deseaba con ansias tomarnos en ese lugar, siempre te agradeceré que me tomes en cuenta como tú familia"
+  }
 ]

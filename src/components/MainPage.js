@@ -1,40 +1,35 @@
 
-import React, { useState } from 'react';
-import confetti from 'canvas-confetti';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Gallery from './Gallery';
+import FloatingPetals from './FloatingPetals';
+import BlueButterflies from './BlueButterflies';
+import LoveLetter from './LoveLetter';
 import './MainPage.css';
 
 const MainPage = () => {
     const [accepted, setAccepted] = useState(false);
+    const [showPetals, setShowPetals] = useState(true);
+    const proposalRef = useRef(null);
+
+    // Hide petals when proposal section comes into view
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setShowPetals(!entry.isIntersecting);
+            },
+            { threshold: 0.2 }
+        );
+
+        if (proposalRef.current) {
+            observer.observe(proposalRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
 
     const handleAccept = () => {
         setAccepted(true);
-        confetti({
-            particleCount: 150,
-            spread: 70,
-            origin: { y: 0.6 },
-            colors: ['#d500f9', '#ffd700', '#ff69b4']
-        });
-
-        // Continuous confetti
-        const duration = 5 * 1000;
-        const animationEnd = Date.now() + duration;
-        const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-
-        const randomInRange = (min, max) => Math.random() * (max - min) + min;
-
-        const interval = setInterval(function () {
-            const timeLeft = animationEnd - Date.now();
-
-            if (timeLeft <= 0) {
-                return clearInterval(interval);
-            }
-
-            const particleCount = 50 * (timeLeft / duration);
-            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
-            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
-        }, 250);
     };
 
     const moveNoButton = (e) => {
@@ -48,6 +43,7 @@ const MainPage = () => {
 
     return (
         <div className="main-page">
+            <FloatingPetals visible={showPetals} />
             <header className="hero">
                 <motion.h1
                     initial={{ opacity: 0, y: -50 }}
@@ -61,7 +57,14 @@ const MainPage = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5, duration: 1 }}
                 >
-                    Momentos que construyen una vida juntos.
+                    Hay muchos momentos que me han gustado, muchas fotos que tenemos juntos y hacen feliz a mi alma.
+                </motion.p>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 1 }}
+                >
+                    Acá recordamos algunas de ellas.
                 </motion.p>
             </header>
 
@@ -69,7 +72,9 @@ const MainPage = () => {
                 <Gallery />
             </section>
 
-            <section className="proposal-section">
+            <LoveLetter />
+
+            <section className="proposal-section" ref={proposalRef}>
                 <motion.div
                     className="proposal-card"
                     initial={{ scale: 0.8, opacity: 0 }}
@@ -86,7 +91,7 @@ const MainPage = () => {
                                 <button
                                     className="no-btn"
                                     onMouseEnter={moveNoButton}
-                                    onClick={moveNoButton} // For mobile touch
+                                    onClick={moveNoButton}
                                 >
                                     No
                                 </button>
@@ -98,9 +103,10 @@ const MainPage = () => {
                             animate={{ scale: 1 }}
                             className="success-message"
                         >
-                            <h2>¡Sabía que dirías que sí! 💜</h2>
-                            <p>Te amo con toda mi alma, mi princesa.</p>
-                            <div className="heart-animation">❤️</div>
+                            <BlueButterflies />
+                            <h2>¡Gracias por decirme que sí!</h2>
+                            <p>Te amaré por siempre corazón.</p>
+                            <div className="heart-animation"></div>
                         </motion.div>
                     )}
                 </motion.div>

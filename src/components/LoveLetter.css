@@ -1,0 +1,211 @@
+.love-letter {
+    padding: 100px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.love-letter-divider {
+    color: var(--accent-rose);
+    opacity: 0.4;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    margin-bottom: 60px;
+}
+
+/* ======================== */
+/*     ENVELOPE BUTTON      */
+/* ======================== */
+
+.envelope {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    padding: 20px;
+}
+
+.envelope:hover {
+    transform: translateY(-6px);
+}
+
+.envelope-icon {
+    width: 160px;
+    height: auto;
+    filter: drop-shadow(0 6px 20px rgba(160, 100, 100, 0.3));
+    transition: filter 0.4s ease;
+}
+
+.envelope:hover .envelope-icon {
+    filter: drop-shadow(0 10px 28px rgba(160, 100, 100, 0.45));
+}
+
+/* After reading, the envelope opens (flap rotates) */
+.envelope-read .envelope-icon .flap {
+    transform-origin: center top;
+    animation: flapOpen 0.6s ease forwards;
+}
+
+@keyframes flapOpen {
+    to {
+        transform: rotateX(180deg);
+    }
+}
+
+/* Letter peek after reading */
+.envelope-read .letter-peek-bar {
+    opacity: 1;
+    transform: translateY(-12px);
+}
+
+.letter-peek-bar {
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(180deg, #fdf8f4, #f0e6da);
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.5s ease 0.4s, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s;
+    margin-bottom: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter-peek-bar span {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 0.6rem;
+    color: #9a7a7a;
+}
+
+.envelope-label {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.envelope:hover .envelope-label {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ======================== */
+/*      LETTER MODAL        */
+/* ======================== */
+
+.letter-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.letter-paper {
+    background: linear-gradient(180deg, #fdf8f4 0%, #f5ece3 100%);
+    max-width: 580px;
+    width: 100%;
+    padding: 60px 50px;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.letter-paper h2 {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #4a2a2a;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.letter-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    color: #b09090;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-family: var(--font-sans);
+}
+
+.letter-close:hover {
+    color: #4a2a2a;
+}
+
+.love-letter-body p {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2;
+    color: #4a3535;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.love-letter-signature {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.love-letter-signature p {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #a06060;
+}
+
+@media (max-width: 480px) {
+    .love-letter {
+        padding: 60px 16px;
+    }
+
+    .envelope-icon {
+        width: 120px;
+    }
+
+    .letter-overlay {
+        padding: 16px;
+        align-items: flex-start;
+    }
+
+    .letter-paper {
+        padding: 36px 24px;
+        margin-top: 40px;
+    }
+
+    .letter-paper h2 {
+        font-size: 1.5rem;
+        margin-bottom: 28px;
+    }
+
+    .love-letter-body p {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+
+    .love-letter-signature p {
+        font-size: 1rem;
+    }
+}

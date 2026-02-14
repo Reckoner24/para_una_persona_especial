@@ -1,0 +1,224 @@
+/* Photo Detail Modal — Art Gallery Style */
+
+.photo-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 10, 18, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Petals layer behind everything in the modal */
+.photo-modal-petals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.photo-modal-petals .petals-container {
+    position: absolute;
+    z-index: 0;
+}
+
+.photo-modal {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    max-height: 85vh;
+    width: 100%;
+    cursor: default;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.photo-modal-image {
+    flex: 1;
+    max-height: 80vh;
+    min-width: 0;
+}
+
+.photo-modal-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+}
+
+.photo-modal-info {
+    flex: 0 0 280px;
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.photo-modal-info h3 {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--text-white);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.photo-modal-location {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent-rose);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.photo-modal-description {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 8px;
+}
+
+.photo-modal-close {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-weight: 300;
+    transition: color 0.3s ease;
+    line-height: 1;
+    z-index: 10;
+}
+
+.photo-modal-close:hover {
+    color: var(--text-white);
+}
+
+.photo-modal-divider {
+    width: 30px;
+    height: 1px;
+    background: var(--accent-rose);
+    opacity: 0.4;
+}
+
+/* Navigation Buttons */
+.photo-modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.7);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+    line-height: 1;
+    padding-bottom: 3px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.photo-modal-nav:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--text-white);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.photo-modal-prev {
+    left: 24px;
+}
+
+.photo-modal-next {
+    right: 24px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .photo-modal-overlay {
+        padding: 20px 12px;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+
+    .photo-modal {
+        flex-direction: column;
+        gap: 20px;
+        max-height: none;
+    }
+
+    .photo-modal-image {
+        max-height: 50vh;
+    }
+
+    .photo-modal-image img {
+        max-height: 50vh;
+    }
+
+    .photo-modal-info {
+        flex: none;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
+    .photo-modal-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .photo-modal-description {
+        font-size: 0.9rem;
+    }
+
+    .photo-modal-close {
+        top: 8px;
+        right: 12px;
+    }
+
+    .photo-modal-nav {
+        width: 36px;
+        height: 36px;
+        font-size: 1.3rem;
+        top: 30vh;
+    }
+
+    .photo-modal-prev {
+        left: 4px;
+    }
+
+    .photo-modal-next {
+        right: 4px;
+    }
+}

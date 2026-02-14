@@ -1,48 +1,64 @@
 .gallery-container {
-    padding: 40px 20px;
+    padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .gallery-container h2 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
-    color: #d500f9;
-    margin-bottom: 40px;
-    text-shadow: 0 0 15px rgba(213, 0, 249, 0.4);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 3rem;
+    color: var(--text-white);
+    margin-bottom: 60px;
+    text-align: center;
+    letter-spacing: -1px;
+    text-shadow: 0 0 40px rgba(200, 150, 180, 0.15);
 }
 
+/* Single glassmorphism showcase */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    /* Smaller min-width for mobile 2-col */
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 24px;
 }
 
 @media (max-width: 480px) {
     .gallery-container {
-        padding: 20px 10px;
+        padding: 40px 10px;
     }
 
     .gallery-container h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .gallery-grid {
-        gap: 10px;
+        gap: 12px;
+        padding: 12px;
         grid-template-columns: repeat(2, 1fr);
-        /* Force 2 columns on mobile */
+        border-radius: 14px;
     }
 }
 
 .gallery-item {
-    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease;
+    border-radius: 12px;
     aspect-ratio: 1;
-    /* Make them square tiles for neatness, or we can use masonry later */
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    z-index: 10;
 }
 
 .gallery-item img {
@@ -50,4 +66,12 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 12px;
+    transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    filter: saturate(1.1) sepia(5%);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.03);
+    filter: saturate(1.2) sepia(0%);
 }

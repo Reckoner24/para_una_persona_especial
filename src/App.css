@@ -5,18 +5,18 @@
 
 /* Global scrollbar styling for a polished look */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1a0b2e;
+    background: var(--bg-dark, #0d0a12);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #6a0572;
-    border-radius: 5px;
+    background: rgba(212, 160, 160, 0.3);
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #d500f9;
+    background: rgba(212, 160, 160, 0.5);
 }
