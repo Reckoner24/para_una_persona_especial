@@ -164,7 +164,7 @@ const LockScreen = ({ onUnlock }) => {
 
     const dayOptions = Array.from({ length: 31 }, (_, i) => i + 1);
     const currentYear = new Date().getFullYear();
-    const yearOptions = Array.from({ length: currentYear - 1990 + 1 }, (_, i) => 1990 + i);
+    const yearOptions = Array.from({ length: 2030 - 1950 + 1 }, (_, i) => 1950 + i);
 
     // Cards visible in the stack: current (front) + next 2 behind
     const card1Idx = (currentCard + 1) % allDates.length;

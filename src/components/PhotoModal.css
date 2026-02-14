@@ -164,6 +164,10 @@
         flex: none;
         width: 100%;
         max-height: 50vh;
+        display: flex;
+        justify-content: center;
+        /* Center image horizontally */
+        margin: 0 auto;
     }
 
     .photo-modal-image img {
@@ -178,8 +182,10 @@
         max-width: 500px;
         text-align: center;
         align-items: center;
-        padding-bottom: 80px;
-        /* Space for scroll */
+        padding: 0 24px 80px 24px;
+        /* Added horizontal padding for text safety */
+        margin: 0 auto;
+        /* Center the info block */
     }
 
     .photo-modal-description {
